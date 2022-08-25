@@ -327,7 +327,7 @@ namespace HomeWork2
                 Console.WriteLine("Введите размер массива (не больше 20-ти): ");
                 int UserNumbers = Convert.ToInt32(Console.ReadLine());
                 int[] array = CreaterArray(UserNumbers);
-                array = Shuffle(array,0,20);
+                array = Shuffle(array,1,20);
                 int[] resultArrey = new int[array.Length];
                 int size = array.Length-1;
                 int trig=0;
@@ -358,7 +358,7 @@ namespace HomeWork2
                 WriteArray(array,1);
                 Console.Write("Произведение пар чисел в массиве: "); 
                 Console.ForegroundColor = ConsoleColor.Green;
-                WriteArray(resultArrey,1);
+                WriteArray(resultArrey,0);
                 Console.ForegroundColor = ConsoleColor.DarkMagenta;
                 Console.ResetColor();
                 Exit_Play = textWrite(Exit_Play, NameProg);
